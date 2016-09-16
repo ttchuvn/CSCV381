@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item_new_bloodglucose"
+        android:icon="@drawable/ic_menu_add"
+        android:title="New Blood Glucose"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/menu_item_show_subtitle"
+        android:title="Add"
+        app:showAsAction="ifRoom"/>
+
+</menu>

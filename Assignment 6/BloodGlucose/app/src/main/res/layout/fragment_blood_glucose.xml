@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Fasting"
+        android:id="@+id/textView"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Breakfast"
+        android:id="@+id/textView2"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Lunch"
+        android:id="@+id/textView3"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Dinner"
+        android:id="@+id/textView4"
+        android:layout_marginTop="19dp"
+        android:layout_marginStart="34dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="34dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/editText_Fasting"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/editText_Breakfast"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignEnd="@+id/editText_Fasting"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/editText_Lunch"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignEnd="@+id/editText_Breakfast"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/editText_Dinner"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/editText_Lunch"
+        android:layout_alignEnd="@+id/editText_Lunch" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;&lt;PICK THE DATE>>"
+        android:id="@+id/button_Date"
+        android:layout_below="@+id/textView5"
+        android:layout_alignRight="@+id/textView_Dinner"
+        android:layout_alignEnd="@+id/textView_Dinner"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Note"
+        android:id="@+id/textView5"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText_Note"
+        android:layout_above="@+id/button_Date"
+        android:layout_toStartOf="@+id/textView_Fasting"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  &lt;&lt;CLEAR>>   "
+        android:id="@+id/button_Clear"
+        android:layout_below="@+id/button_Date"
+        android:layout_alignLeft="@+id/button_Date"
+        android:layout_alignStart="@+id/button_Date" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" &lt;&lt;RETRIEVE>> "
+        android:id="@+id/button_Retrieve"
+        android:layout_alignBottom="@+id/button_Clear"
+        android:layout_alignRight="@+id/textView_Dinner"
+        android:layout_alignEnd="@+id/textView_Dinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BLOOD GLUCOSE MONITOR"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" "
+        android:id="@+id/textView_Fasting"
+        android:layout_alignBottom="@+id/editText_Fasting"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" "
+        android:id="@+id/textView_Breakfast"
+        android:layout_alignBottom="@+id/editText_Breakfast"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" "
+        android:id="@+id/textView_Lunch"
+        android:layout_above="@+id/editText_Dinner"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" "
+        android:id="@+id/textView_Dinner"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reminder at 9pm"
+        android:id="@+id/btn_Reminder"
+        android:layout_below="@+id/button_Clear"
+        android:layout_marginTop="52dp"
+        android:layout_alignStart="@+id/button_Clear" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Reminder"
+        android:id="@+id/btn_Cancel"
+        android:layout_alignBottom="@+id/btn_Reminder"
+        android:layout_alignEnd="@+id/button_Date" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Notification"
+        android:id="@+id/btn_Notification"
+        android:layout_below="@+id/btn_Reminder"
+        android:layout_alignStart="@+id/editText_Dinner" />
+
+    TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView_Test"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginBottom="56dp" />
+
+</RelativeLayout>
